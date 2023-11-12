@@ -1,0 +1,160 @@
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-slate-blue-bg: hsl(252, 100%, 67%);
+    --light-royal-blue-bg: hsl(241, 81%, 54%);
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    background-color: var(--pale-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 65.5%;
+}
+
+main.container {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 3rem;
+}
+
+main.container section.left {
+    background: linear-gradient(to bottom, var(--light-slate-blue-bg), var(--light-royal-blue-bg));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    max-width: 325px;
+    gap: 1rem;
+    border-radius: 3rem;
+}
+
+main.container h1.result-title {
+    color: var(--light-lavender);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+main.container .score {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, var(--violet-blue-circle), var(--persian-blue-circle));
+}
+
+main.container .score h2 {
+    font-size: 4rem;
+    color: var(--white);
+    font-weight: 800;
+}
+
+main.container .score p {
+    font-size: 1rem;
+    color: var(--light-lavender);
+    font-weight: 500;
+}
+
+main.container h3.result-subtitle {
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 700;
+}
+
+main.container .description {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--light-lavender);
+}
+
+main.container section.right {
+    background-color: var(--white);
+    padding: 2rem;
+    max-width: 325px;
+    border-radius: 0 3rem 3rem 0;
+}
+
+main.container section.card .summary-title{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+main.container section.card ul {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main.container section.card ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+main.container section.card ul li .icon {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+main.container section.card ul li span {
+    margin-right: 1rem;
+    display: flex;
+    color: #000;
+}
+
+main.container section.card ul li.reaction {
+    background-color: hsla(0, 100%, 67%, .2);
+    border-radius: .5rem;
+    color: var(--light-red);
+}
+main.container section.card ul li.memory {
+    background-color: hsla(39, 100%, 56%, .2);
+    border-radius: .5rem;
+    color: var(--orangey-yellow);
+}
+main.container section.card ul li.verbal {
+    background-color: hsla(166, 100%, 37%, .2);
+    border-radius: .5rem;
+    color: var(--green-teal);
+}
+main.container section.card ul li.visual {
+    background-color: hsla(234, 85%, 45%, .2);
+    border-radius: .5rem;
+    color: var(--cobalt-blue);
+}
+
+main.container section.card ul .btn {
+    background-color: var(--dark-gray-blue);
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.container section.card ul .btn:hover {
+    background: linear-gradient(to bottom, var(--light-slate-blue-bg), var(--light-royal-blue-bg));
+    cursor: pointer;
+}

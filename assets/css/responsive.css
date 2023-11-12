@@ -1,0 +1,21 @@
+@media screen and (max-width: 707px) {
+
+    body {
+        background-color: var(--white) !important;
+    }
+
+    main.container {
+        height: 100vh;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    main.container section.left {
+        border-radius: 0 0 3rem 3rem !important;
+    }
+
+    main.container p.description {
+        padding: 2rem;
+    }
+}
